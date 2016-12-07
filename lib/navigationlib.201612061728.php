@@ -5281,12 +5281,6 @@ class navigation_json {
      * @return string JSON
      */
     protected function convert_child($child, $depth=1) {
-        global $DB;
-        // Skip elements (nodes) with indentation - sleitao format mooc
-        if (($child->type == $child::TYPE_RESOURCE || $child->type == $child::TYPE_ACTIVITY) && ($isindent = $DB->get_field('course_modules','indent',array('id'=>$child->key)))) {
-            return '';
-        }
-        // end sleitao format mooc
         if (!$child->display) {
             return '';
         }
