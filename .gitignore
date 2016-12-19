@@ -39,3 +39,6 @@ atlassian-ide-plugin.xml
 
 # Theme
 /theme/academia
+
+# Course format: mooc
+/course/format/mooc
