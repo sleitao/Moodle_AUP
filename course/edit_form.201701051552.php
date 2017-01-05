@@ -159,7 +159,6 @@ class course_edit_form extends moodleform {
 
         // Course format.
         $mform->addElement('header', 'courseformathdr', get_string('type_format', 'plugin'));
-        $mform->setExpanded('courseformathdr'); //sleitao - 2016.07.07 - Para que o menu fique aberto
 
         $courseformats = get_sorted_course_formats(true);
         $formcourseformats = array();
