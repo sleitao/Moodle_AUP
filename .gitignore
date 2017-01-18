@@ -46,6 +46,7 @@ atlassian-ide-plugin.xml
 
 # Module
 /mod/videopage
+/mod/bigbluebuttonbn
 
 # Block
 /blocks/partnerships
