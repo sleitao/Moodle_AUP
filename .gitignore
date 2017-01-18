@@ -49,3 +49,5 @@ atlassian-ide-plugin.xml
 
 # Block
 /blocks/partnerships
+/blocks/material_download
+/blocks/progress
