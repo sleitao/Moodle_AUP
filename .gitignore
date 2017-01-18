@@ -43,3 +43,9 @@ atlassian-ide-plugin.xml
 
 # Course format: mooc
 /course/format/mooc
+
+# Module
+/mod/videopage
+
+# Block
+/blocks/partnerships
