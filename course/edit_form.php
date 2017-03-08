@@ -179,6 +179,10 @@ class course_edit_form extends moodleform {
         $mform->addHelpButton('format', 'format');
         $mform->setDefault('format', $courseconfig->format);
 
+        if (!empty($course->id) and !has_capability('moodle/course:create', $coursecontext)) { //sleitao - 2017.02.20 - Para que teachers não alterem o formato
+                $mform->hardFreeze('format');
+        }
+
         // Button to update format-specific options on format change (will be hidden by JavaScript).
         $mform->registerNoSubmitButton('updatecourseformat');
         $mform->addElement('submit', 'updatecourseformat', get_string('courseformatudpate'));
